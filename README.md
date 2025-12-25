@@ -1,22 +1,52 @@
-# JDBC Menu Based Login & Signup Project
+# 🚀 JDBC Menu Based Login & Signup Application
 
-## Description
-Menu-driven Java JDBC application with Signup, Login and View Users
-using MySQL stored procedures.
+A **menu-driven console-based Java application** developed using **Core Java and JDBC**.
+This project implements **Signup, Login, and View Users** functionality using a
+**MySQL database with Stored Procedures**.
 
-## Technologies Used
-- Java
-- JDBC
-- MySQL
-- Stored Procedures
+The main goal of this project is to understand **JDBC connectivity, database interaction,
+and backend logic** without using any web framework.
 
-## Features
-- Signup
-- Login
-- View Users
+---
 
-## How to Run
-1. Import project into Eclipse
-2. Add MySQL Connector JAR
-3. Create database and stored procedures
-4. Run JDBCMenuApp.java
+## 🖥️ Application Preview (Console)
+===== MAIN MENU =====
+
+1.Signup
+2.Login
+3.View All Users
+4.Exit
+
+---
+
+## 🛠️ Technologies Used
+- ☕ Java (Core Java)
+- 🔗 JDBC
+- 🗄️ MySQL
+- ⚙️ Stored Procedures
+- 🖥️ Console-based UI
+- 🌱 Git & GitHub
+
+---
+
+## ✨ Features
+- 🔐 User Signup (store user details in database)
+- 🔑 User Login (email & password validation)
+- 📋 View All Registered Users
+- 🧭 Menu-based interaction
+- 🛡️ Secure database calls using `CallableStatement`
+
+---
+
+## 🗂️ Database Design
+
+### Database Name
+
+### Table Structure
+
+CREATE TABLE users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(50),
+    email VARCHAR(50) UNIQUE,
+    password VARCHAR(50)
+);
